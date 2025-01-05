@@ -5,9 +5,12 @@ if ! command -v brew &>/dev/null; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
-brew install zsh
+# install packages
+brew install zsh tmux swifbar vscodium wget
+brew install librewolf --no-quarantine
 
 # set typing speed to be quick
 defaults write NSGlobalDomain InitialKeyRepeat -int 20
 defaults write NSGlobalDomain KeyRepeat -int 1
 
+# config downloads and setups
